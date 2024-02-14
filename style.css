@@ -152,37 +152,4 @@ footer {
             padding-bottom: 2rem;
       }
 }
-/* Thêm các điều chỉnh cho thiết bị di động */
-@media (max-width: 600px) {
-      h1 {
-            font-size: 24px;
-      }
-      
-      #wrapper {
-            grid-column: span 12;
-      }
 
-      #clock-box #clock {
-            grid-column: 2 / 12;
-      }
-
-      .avt {
-            width: 100px;
-            height: 100px;
-      }
-
-      #info .one, #info .two{
-            grid-column: span 12;;
-      }
-
-      #heart {
-            grid-column: span 12;
-            padding-bottom: 1rem;
-      }
-
-      footer {
-            font-size: 14px;
-            margin: 0;
-            padding-bottom: 1rem;
-      }
-}
