@@ -153,3 +153,33 @@ footer {
       }
 }
 
+.avt {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+      object-fit: cover; /* Thêm thuộc tính này */
+}
+
+footer {
+      grid-column: span 3;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: lighter;
+      margin-top: 1.2rem;
+      padding: 1rem 0; /* Thêm padding */
+}
+
+@media (max-width: 992px) {
+      .avt {
+            width: 120px;
+            height: 120px;
+      }
+
+      footer {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem 0; /* Điều chỉnh padding */
+            padding-bottom: 2rem;
+      }
+}
