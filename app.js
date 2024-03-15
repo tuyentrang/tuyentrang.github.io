@@ -4,7 +4,7 @@ music = ['boo'];
 
 document.addEventListener('DOMContentLoaded', function(){
     // Khai báo danh sách nhạc
-    const playlist = document.querySelectorAll('.song');
+    const playlist = document.querySelectorAll('Bài hát hay nghe ^^');
 
     // Hàm chuyển đổi giữa các bài hát
     function switchSong(song) {
