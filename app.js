@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // Hàm chuyển đổi giữa các bài hát
     function switchSong(song) {
-        const audio = document.querySelector("audio");
+        const audio = document.querySelector("Perfect");
         const imgSrc = song.getAttribute('data-img');
         const audioSrc = song.getAttribute('data-src');
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-
+//Hàm đếm ngày yêu
 document.addEventListener('DOMContentLoaded', function(){
       var rootTime = document.querySelector("time");
 
