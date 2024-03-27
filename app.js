@@ -1,5 +1,5 @@
 const yourDate = new Date("2022-12-04T01:10:24"),
-music = ['boo'];
+music = ['boo','Perfect'];
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function(){
     // Hàm chuyển đổi giữa các bài hát
     function switchSong(song) {
         const audio = document.querySelector("Perfect");
-        const imgSrc = song.getAttribute('data-img');
-        const audioSrc = song.getAttribute('data-src');
+        const imgSrc = song.getAttribute('Perfect.jpg');
+        const audioSrc = song.getAttribute('Perfect.mp3');
 
         document.getElementById('mask').style.backgroundImage = `url('${imgSrc}')`;
         audio.src = audioSrc;
