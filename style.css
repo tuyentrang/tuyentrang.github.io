@@ -79,6 +79,88 @@ h1 {
 
 
 
+/* Style for the menu */
+.menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+}
+
+.menu-toggle-label {
+  display: block;
+  cursor: pointer;
+}
+
+.menu-toggle-label span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333;
+  transition: background 0.3s;
+}
+
+#menu-toggle-checkbox:checked ~ .menu {
+  display: block;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 0;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Style for the dark mode toggle */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1001;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode .menu-toggle-label span {
+  background-color: #fff;
+}
+
+body.dark-mode .menu {
+  background-color: #333;
+}
+
+body.dark-mode .menu ul li a {
+  color: #fff;
+}
 
 
 
