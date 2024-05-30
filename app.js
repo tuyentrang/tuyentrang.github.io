@@ -32,6 +32,33 @@ document.addEventListener('DOMContentLoaded', function(){
     // Các hàm khác ở đây...
 });
 
+// Toggle dark mode
+document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+});
+
+// Handle music button click
+document.getElementById('music-button').addEventListener('click', function() {
+  // Code to show music player interface
+});
+
+// Handle change background button click
+document.getElementById('change-background').addEventListener('click', function() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = 'image/*';
+  input.onchange = function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.body.style.backgroundImage = `url(${e.target.result})`;
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  input.click();
+});
 
 
 
